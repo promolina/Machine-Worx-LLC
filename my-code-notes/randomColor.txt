@@ -1,0 +1,30 @@
+Generate a random hex color
+
+const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  box.style.backgroundColor = color;
+
+  Start with a list of characters you can use in a hex color code — the numbers 0–9 and the letters A–F.
+
+  const letters = '0123456789ABCDEF';
+
+  Create an empty color string that starts with a # (since all hex color codes begin with #).
+
+  let color = '#';
+
+  Repeat 6 times (because hex color codes are 6 digits long):
+
+Randomly pick one character from the letters list.
+
+Add that character to the end of the color string.
+
+for (let i = 0; i < 6; i++) {
+  color += letters[Math.floor(Math.random() * 16)];
+}
+
+Set the background color of the box element to the random hex color you just created.
+
+box.style.backgroundColor = color;
