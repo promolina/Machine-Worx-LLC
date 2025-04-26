@@ -29,7 +29,7 @@ html {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem; /* Increase this slightly if it's still tight */
 }
 
 .navbar {
@@ -39,8 +39,9 @@ html {
 }
 
 .navbar-brand {
-  margin-left: auto;
-  padding-left: 1rem;
+  margin-left: 1rem;     /* optional: push away from the edge */
+  margin-right: 1rem;    /* 👈 this is key */
+  padding: 0.5rem;        /* optional: adds inner space */
 }
 
 .navbar-brand img {
@@ -52,7 +53,7 @@ html {
   list-style: none;
   display: flex;
   gap: 2rem;
-
+  padding: 0 2rem; /* Increase this slightly if it's still tight */
   
 }
 
